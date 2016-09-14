@@ -1,0 +1,79 @@
+div {
+    margin: 10px;
+    /* border: blueviolet 1px dashed; */
+    display: inherit;
+    flex-direction: inherit;
+}
+
+body div {
+    background-color: rgb(100, 220, 255);
+}
+
+body div div {
+    background-color: rgb(100, 240, 215);
+}
+
+body div div div {
+    background-color: rgb(100, 255, 175);
+}
+
+body div div div div{
+    background-color: rgb(100, 255, 135);
+}
+
+body {
+    /* turns back to (104, 187, 285) automatically. */
+    background-color: rgb(104, 187, 285);
+}
+
+#profil_image {
+    font-size: .45em;
+    width: 90%;
+    max-width: 500px;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#header, #footer {
+    min-width: 600px;
+}
+#footer p {
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    min-width: 600px;
+}
+
+#left-box {
+    flex-direction: column;
+    float: left;
+    background-color: rgb(9, 30, 45);
+    color: white;   
+}
+#left-box div {
+    background-color: rgb(18, 60, 90);
+}
+
+#right-box {
+    flex-direction: column;
+}
+
+#right-box div {
+    background-color: white;
+    border-radius: 50px;
+}
+#right-box div div {
+    border-radius: inherit;
+    background-color: #F0F0F0;
+}
+
+.experience p, .study p{
+    margin: 40px;
+}
