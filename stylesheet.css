@@ -1,3 +1,7 @@
+h1 {
+
+}
+
 div {
     margin: 10px;
     /* border: blueviolet 1px dashed; */
@@ -6,34 +10,44 @@ div {
 }
 
 body div {
-    background-color: rgb(100, 220, 255);
+    background-color: rgb(250, 253, 255);
 }
 
 body div div {
-    background-color: rgb(100, 240, 215);
+    background-color: rgb(220, 240, 215);
 }
 
 body div div div {
-    background-color: rgb(100, 255, 175);
+    background-color: rgb(200, 233, 255);
 }
 
 body div div div div{
-    background-color: rgb(100, 255, 135);
+    background-color: rgb(180, 227, 255);
 }
 
 body {
     /* turns back to (104, 187, 285) automatically. */
-    background-color: rgb(104, 187, 285);
+    background-color: rgb(255, 255, 255);
+}
+body, #container, #container > div[id$='box'] {
+    margin: 0;
 }
 
 #profil_image {
     font-size: .45em;
-    width: 90%;
-    max-width: 500px;
+    width: 50%;
     flex-direction: column;
     align-self: center;
     align-items: center;
 }
+.rotate90 {
+    margin: 50px 0;
+     -webkit-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+     -o-transform: rotate(90deg);
+     -ms-transform: rotate(90deg);
+     transform: rotate(90deg);
+ }
 
 h1, h2 {
     text-align: center;
@@ -55,14 +69,23 @@ h1, h2 {
     flex-direction: column;
     float: left;
     background-color: rgb(9, 30, 45);
-    color: white;   
+    color: white;
+    padding: 1em;
+    margin-right: 0;
+    max-width: 375px;
+}
+#left-box h3, #left-box ul {
+    margin: 0.5em 0;
 }
 #left-box div {
     background-color: rgb(18, 60, 90);
+    margin: 0.5em 0;
+    padding: 0.5em;
 }
 
 #right-box {
     flex-direction: column;
+    margin-left: 0;
 }
 
 #right-box div {
@@ -71,9 +94,24 @@ h1, h2 {
 }
 #right-box div div {
     border-radius: inherit;
-    background-color: #F0F0F0;
+    background-color: rgb(241, 241, 241);
 }
 
-.experience p, .study p{
+.experience p, .study p {
     margin: 40px;
+}
+.experience a.experience-source {
+    font-size: 0.5em;
+}
+a {
+    text-decoration: none;
+}
+#left-box a {
+    color: lightcyan;
+}
+#right-box a {
+    color: rgb(0, 0, 32);
+}
+a:hover {
+    text-decoration: underline;
 }
