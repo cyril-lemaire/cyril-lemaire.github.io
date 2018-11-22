@@ -1,171 +1,211 @@
 <!DOCTYPE html>
-
 <html lang="fr">
-<head>
-    <title>Curriculum Vitae - Cyril Lemaire</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Compiled and minified Materialize CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+		<link rel="stylesheet" href="css/index.css"/>
+		<!-- Materialize icons stylesheet -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
 
-    <link rel="stylesheet" href="stylesheet.css"/>
-</head>
-<body>
-	<div id="container">
-		<div id="left-box">
-			<!-- Une image de moi -->
-			<img id="profil_image" src="images/Cyril_Photo_unique.jpg"
-				 alt="Une magnifique photo de moi"/> <!--class="rotate90"/> -->
-			<!-- Mes informations -->
-			<h2>Cyril Lemaire</h2>
-			<div id="infos">
-				<h3>Contact :</h3>
-				<ul>
-					<li>06 83 26 71 63</li>
-					<li><a href="mailto:cyril.lemaire.pro@gmail.com">cyril.lemaire.pro@gmail.com</a></li>
-					<li>
-						49, rue de Châtenay, bât D1<br>
-						92160 Antony
-					</li>
-				</ul>
-			</div>
-			<div id="langues">
-				<h3>Langues vivantes :</h3>
-				<ul>
-					<li>Anglais : courant</li>
-					<li>Espagnol : notions</li>
-				</ul>
-			</div>
-			<div id="loisirs">
-				<h3>Mes loisirs :</h3>
-				<ul>
-					<li>Course à pied :<br>
-						(5/10km)
-					</li>
-					<li>Jeux vidéos de logique :<br>
-						Portal, The Witness, The swapper, Prelogate, ...
-					</li>
-					<li>Lecture :
-						mangas, manwhas
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div id="right-box">
-			<div id="header">
-				<h1>Développeur web junior</h1>
-			</div>
-			<div id="experiences-box">
-				<h2>Expérience</h2>
-				<div class="experience">
-					<h2>
-						Haras de la métamorphose
-						<a class="experience-source" href="https://github.com/WildCodeSchool/bleau_S2_2016_haras_metamorphose">[code source]</a>
-					</h2>
-					<p>
-						Projet client complexe sur Symfony visant à accompagner la création du Haras de la métamorphose à Compiègne.
-						Il a fallu créer un site similaire à un blog permettant d'entamer l'échange avec les futurs consommacteurs du site
-						et valoriser les différents domaines d'activité en cours de création (sports, arts, familles, entreprises, ...)
-						tout en permettant la plus grande simplicité d'administration et une très grande modularité pour pouvoir suivre
-						les évolutions futures (site bilingue dont la totalité des pages sont modifiables à volonté)
-					</p>
+	<body>
+		<div id="body-container">
+			<div id="left-box">
+				<!-- Une image de moi -->
+				<img id="profil_image" src="images/Cyril_Photo_unique.jpg"
+					 alt="Une magnifique photo de moi"/> <!--class="rotate90"/> -->
+				<!-- Mes informations -->
+				<h2>Cyril Lemaire</h2>
+				<div id="infos">
+					<h3>Contact :</h3>
+					<ul>
+						<li>
+							<i class="material-icons dp48 small">phone_android</i>
+							06 83 26 71 63
+						</li>
+						<li>
+							<i class="material-icons dp48 small">email</i>
+							<a href="mailto:cyril.lemaire.pro@gmail.com">
+								cyril.lemaire.pro@gmail.com
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/cyril-lemaire/">
+								<img id="linkedin_logo" class="social_img" src="images/linkedin.png" alt="LinkedIn"/>
+							</a>
+							<a href="https://github.com/cyril-lemaire">
+								<img id="github_logo" class="social_img" src="images/github.png" alt="GitHub"/>
+							</a>
+						</li>
+					</ul>
 				</div>
-				<div class="experience">
-					<h2>
-						Projet final de la Wild Code School
-						<a class="experience-source" href="https://github.com/WildCodeSchool/bleau_examphp2017/tree/Chirilu">[code source]</a>
-					</h2>
-					<p>
-						Projet de démonstration technique (sans client, l'aspect esthétique du site n'a pas été abordé).
-						Ce site permet la création de joueurs et d'équipes de Quidditch, manuellement ou en création automatique via l'API randomuser
-						et la constitution de matchs et de tournois. Il offre une prise en charge des informations personnelles
-						des joueurs (photo, expérience, endurance) évoluant automatiquement au fil des matchs. La constitution
-						des équipes (rôles et nombre de joueurs par rôle) est entièrement administrable, et la création automatique s'adapte en conséquence.
-					</p>
+				<div id="langues">
+					<h3>Langues vivantes :</h3>
+					<ul>
+						<li>Anglais : courant</li>
+						<li>Espagnol : notions</li>
+					</ul>
 				</div>
-				<div class="experience">
-					<h2>
-						Files Sharing
-						<a class="experience-source" href="https://github.com/WildCodeSchool/bleau_S2_2016_files-sharing">[code source]</a>
-					</h2>
-					<p>
-						Projet de découverte de Ruby-on-rails. Ce projet permet l'hébergement de fichiers en ligne et d'en autoriser le téléchargement
-						et la modification à des utilisateurs tiers (via des partages nominatifs ou des groupes de partages entièrement administrables par les utilisateurs).
-					</p>
+				<div id="loisirs">
+					<h3>Loisirs :</h3>
+					<ul>
+						<li>Course à pied (5~10 km)
+						</li>
+						<li>Jeux vidéos de logique :<br>
+							Portal, The Witness, The swapper, Prelogate, ...
+						</li>
+						<li>Lecture :<br>
+							mangas, manwhas
+						</li>
+					</ul>
 				</div>
-			</div>  <!-- End of experiences-box -->
-
-			<div id="studies-box">
-				<h2>Formation</h2>
-				<ul>
-					<li>
-						2016-2017:
-						<img src="images/wild_code_school.png" alt="logo de la Wild Code School" width="10%">
-						<a href="https://wildcodeschool.fr/">Wild Code School</a><br>
-						Diplôme de Développeur Web
-						<hr/>
-					</li>
-					<li>
-						2015-2016:
-						<img src="images/iut_informatique_amiens.png" alt="logo de l'I.U.T. Informatique d'Amiens" width="10%">
-						<a href="http://info.iut-amiens.fr/">I.U.T. Informatique d'Amiens</a><br>
-						<a href="http://info.iut-amiens.fr/cours/dut-informatique-en-annee-speciale/">Année spéciale</a>
-						<hr/>
-					</li>
-					<li>
-						2013-2015:
-						<img src="images/u_psud.jpg" alt="logo de l'Université Paris Sud" width="10%">
-						<a href="http://www.u-psud.fr/fr/index.html">Université Paris XI</a><br>
-						Licence 1 Math-Physique-Informatique
-						<hr/>
-					</li>
-					<li>
-						2012-2013:
-						<img src="images/cpe_lyon.jpg" alt="logo de CPE-Lyon" width="10%">
-						<a href="http://www.cpe.fr/">CPGE Intégrée à CPE Lyon</a><br>
-						filière électronique
-						<hr/>
-					</li>
-					<li>
-						2011-2012:
-						Bac S, mention Bien
-					</li>
-				</ul>
-			</div> <!-- End of studies-box -->
-
-			<div id="expertises-box">
-				<h2>Compétences</h2>
-				<ul>
-					<li class="expertise">
-						<strong>PHP</strong> (symfony) - Ma référence en développement web.
-					</li>
-					<li class="expertise">
-						<strong>Ruby</strong> (ruby-on-rails) - Mon langage préféré en développement algorithmique.
-					</li>
-					<li class="expertise">
-						<strong>Javascript</strong> (JQuery, Ajax) - A l'aise sur une utilisation front-end.
-					</li>
-					<li class="expertise">
-						<strong>Python</strong>, <strong>C++</strong> - Pratique courante
-					</li>
-					<li class="expertise">
-						<strong>Java</strong>, <strong>C#</strong>, <strong>Pascal</strong>, <strong>Processing</strong> - Pratique occasionnelle
-					</li>
-					<li class="expertise">
-						<strong>Algorithmique</strong> - Résolution de problèmes (<a href="https://www.codewars.com/users/cyril-lemaire">codewars</a>,
-						<a href="https://www.codingame.com/profile/f529ecfbb6cc3b402a40027fd38beec14437821">CodinGame</a>,
-						<a href="https://projecteuler.net/progress=Alshock">Project Euler</a>)
-					</li>
-					<li class="expertise">
-						<strong>Outils de développement</strong> - <strong>SCRUM</strong> (développement agile), <strong>Git</strong>, <strong>Github</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, <strong></strong>
-						<a href="https://www.codingame.com/profile/f529ecfbb6cc3b402a40027fd38beec14437821">CodinGame</a>,
-						<a href="https://projecteuler.net/progress=Alshock">Project Euler</a>)
-					</li>
-				</ul>
 			</div>
+			<div id="right-box" class="container">
+				<div id="header">
+					<h1>Développeur web junior</h1>
+				</div>
+				<div id="client-projects-databox" class="container">
+					<h2>Projets clients</h2>
+					<div class="row">
+						<!-- <div class="list-projects row"> -->
+						<div class="project col s12 m6">
+							<h3>
+								Haras de la métamorphose
+							</h3>
+							<p>
+								Projet client complexe sur Symfony 3 visant à accompagner la création du Haras de la métamorphose à Compiègne.
+								Il a fallu créer un site hautement modulaire capable d'accueillir tant la présentation et la valorisation des domaines d'activité en construction que d'assurer l'échange avec les futurs consommacteurs du site et leur permettre de s'impliquer et d'inventer les différents domaines d'activité (sports, arts, familles, entreprises, ...) tout en permettant la plus grande simplicité d'administration et une très grande modularité pour pouvoir suivre les évolutions futures (site multilingue dont la totalité des pages sont modifiables à volonté).
+							</p>
+						</div>
+						<div class="project col s12 m6">
+							<h3>
+								Panoply - LSCE
+							</h3>
+							<p>
+								Traduction anglaise intégrale d'un site scientifique sous Drupal présentant une cinquantaine d'instruments, les techniques d'analyse et domaines d'application
+								assosciés. Refonte des gestions de tags et référencements internes pour assurer la possibilité de changer de langue sur n'importe quelle page.
+							</p>
+						</div>
+					</div>
+					<!-- </div> <!--  End of list-projects row  --> -->
+				</div>
+				<div id="studies">
+					<div id="studies-databox">
+						<h2>Formation</h2>
+						<ul>
+							<li>
+								<span class="date">2017-2018:</span>						<img src="images/42.png" alt="logo de 42 - Born To Code" width="10%" />
+								<div class="study-description">
+									<a href="https://www.42.fr/">École 42</a><br>
+								</div>
+							</li>
+							<hr/>
+							<li>
+								<span class="date">2016-2017:</span>
+								<img src="images/wild_code_school.png" alt="logo de la Wild Code School" width="10%" />
+								<div class="study-description">
+									<a href="https://wildcodeschool.fr/">Wild Code School</a><br>
+									Diplôme de Développeur Web
+								</div>
+								<hr/>
+							</li>
+							<hr/>
+							<li>
+								<span class="date">2015-2016:</span>
+								<img src="images/iut_informatique_amiens.png" alt="logo de l'I.U.T. Informatique d'Amiens" width="10%">
+								<div class="study-description">
+									<a href="http://info.iut-amiens.fr/">I.U.T. Informatique d'Amiens</a><br>
+									<a href="http://info.iut-amiens.fr/cours/dut-informatique-en-annee-speciale/">Année spéciale</a>
+								</div>
+							</li>
+							<hr/>
+							<li>
+								<span class="date">2013-2015:</span>
+								<img src="images/u_psud.jpg" alt="logo de l'Université Paris Sud" width="10%">
+								<div class="study-description">
+									<a href="http://www.u-psud.fr/fr/index.html">Université Paris XI</a>
+									Licence 1 Math-Physique-Informatique
+								</div>
+							</li>
+							<hr/>
+							<li>
+								<span class="date">2012-2013:</span>
+								<img src="images/cpe_lyon.jpg" alt="logo de CPE-Lyon" width="10%">
+								<div class="study-description">
+									<a href="http://www.cpe.fr/">CPGE Intégrée à CPE Lyon</a><br>
+									Filière électronique
+								</div>
+							</li>
+							<hr/>
+							<li>
+								2012:
+								<div class="study-description">
+									<span class="certificate">Bac S</span>
+									<span class="honours">mention Bien</span>
+								</div>
+							</li>
+						</ul>
+					</div> <!--  End of studies-databox  -->
+					<div id="other-projects-databox">
+						<h2>Projets scolaires/personnels</h2>
+						<div class="project">
+							<h3>
+								Projet final de la Wild Code School
+							</h3>
+							<p>
+								Projet de démonstration technique (sans client, l'aspect esthétique du site n'a pas été abordé).
+								Ce site permet la création de joueurs et d'équipes de Quidditch, manuellement ou en création automatique via l'API randomuser et la constitution de matchs et de tournois.
+								Il offre une prise en charge des informations personnelles des joueurs (photo, expérience, endurance), les caractéristiques de jeu évoluant automatiquement au fil des matchs. La constitution des équipes (rôles et nombre de joueurs par rôle) est entièrement administrable, et la création automatique s'adapte en conséquence.
+							</p>
+						</div>
+						<div class="project">
+							<h3>
+								Files Sharing
+							</h3>
+							<p>
+								Projet de découverte de Ruby-on-rails. Ce projet permet l'hébergement de fichiers en ligne et d'en autoriser le téléchargement et la modification à des utilisateurs tiers (via des partages nominatifs ou des groupes de partages entièrement administrables par les utilisateurs).
+							</p>
+						</div>
+					</div>  <!--  End of other-projects-databox  -->
+				</div>
+				<div id="expertises-databox">
+					<h2>Compétences</h2>
+					<ul>
+						<li class="expertise">
+							<strong>PHP</strong> (symfony) - Ma référence en développement web.
+						</li>
+						<li class="expertise">
+							<strong>Ruby</strong> (ruby-on-rails) - Mon langage préféré en développement algorithmique.
+						</li>
+						<li class="expertise">
+							<strong>Javascript</strong> (JQuery, Ajax) - A l'aise sur une utilisation front-end.
+						</li>
+						<li class="expertise">
+							<strong>Python</strong>, <strong>C++</strong> - Pratique courante
+						</li>
+						<li class="expertise">
+							<strong>Java</strong>, <strong>C#</strong>, <strong>Pascal</strong>, <strong>Processing</strong> - Pratique occasionnelle
+						</li>
+						<li class="expertise">
+							<strong>Algorithmique</strong> - Résolution de problèmes (<a href="https://www.codewars.com/users/cyril-lemaire">Codewars</a>,
+							<a href="https://www.codingame.com/profile/f529ecfbb6cc3b402a40027fd38beec14437821">CodinGame</a>,
+							<a href="https://projecteuler.net/progress=Alshock">Project Euler</a>)
+						</li>
+						<li class="expertise">
+							<strong>Outils de développement</strong> - <strong>SCRUM</strong> (développement agile), <strong>Git</strong>, <strong>Github</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>SASS</strong>...
+						</li>
+					</ul>
+				</div>
+			</div>  <!--  End of right-box  -->
 
-		</div>  <!-- End of right-box -->
-
+			<!-- Compiled and minified JQuery -->
+			<script
+					src="https://code.jquery.com/jquery-3.2.1.min.js"
+					integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+					crossorigin="anonymous">
+			</script>
+			<!-- Compiled and minified Materialize JavaScript -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+		</div>  <!--  End of body-container  -->
 		<!-- Compiled and minified JQuery -->
 		<script
 				src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -174,6 +214,5 @@
 		</script>
 		<!-- Compiled and minified Materialize JavaScript -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
-	</div>  <!-- End of container -->
-</body>
+	</body>
 </html>
