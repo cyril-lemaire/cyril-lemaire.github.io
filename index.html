@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
 		<link rel="stylesheet" href="css/index.css"/>
 		<!-- Materialize icons stylesheet -->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<title>Cyril Lemaire - CV</title>
 	</head>
 
 	<body>
-		<div id="body-container">
-			<div id="left-box">
+		<div id="body-container" class="row">
+			<div id="left-box" class="col s3 m2 l1">
 				<!-- Une image de moi -->
-				<img id="profil_image" src="images/Cyril_Photo_unique.jpg"
+				<img id="profile-picture" src="images/Cyril_Photo_unique.jpg"
 					 alt="Une magnifique photo de moi"/> <!--class="rotate90"/> -->
 				<!-- Mes informations -->
 				<h2>Cyril Lemaire</h2>
@@ -23,8 +26,8 @@
 							06 83 26 71 63
 						</li>
 						<li>
-							<i class="material-icons dp48 small">email</i>
 							<a href="mailto:cyril.lemaire.pro@gmail.com">
+								<i class="material-icons dp48 small">email</i>
 								cyril.lemaire.pro@gmail.com
 							</a>
 						</li>
@@ -47,7 +50,7 @@
 				</div>
 				<div id="loisirs">
 					<h3>Loisirs :</h3>
-					<ul>
+					<ul class="square-list">
 						<li>Course à pied (5~10 km)
 						</li>
 						<li>Jeux vidéos de logique :<br>
@@ -59,18 +62,16 @@
 					</ul>
 				</div>
 			</div>
-			<div id="right-box" class="container">
-				<div id="header">
+			<div id="right-box" class="col s9 m10 l11 container">
+				<header id="header">
 					<h1>Développeur web junior</h1>
-				</div>
+				</header>
 				<div id="client-projects-databox" class="container">
 					<h2>Projets clients</h2>
 					<div class="row">
 						<!-- <div class="list-projects row"> -->
 						<div class="project col s12 m6">
-							<h3>
-								Haras de la métamorphose
-							</h3>
+							<h3>Haras de la métamorphose</h3>
 							<p>
 								Projet client complexe sur Symfony 3 visant à accompagner la création du Haras de la métamorphose à Compiègne.
 								Il a fallu créer un site hautement modulaire capable d'accueillir tant la présentation et la valorisation des domaines d'activité en construction que d'assurer l'échange avec les futurs consommacteurs du site et leur permettre de s'impliquer et d'inventer les différents domaines d'activité (sports, arts, familles, entreprises, ...) tout en permettant la plus grande simplicité d'administration et une très grande modularité pour pouvoir suivre les évolutions futures (site multilingue dont la totalité des pages sont modifiables à volonté).
@@ -78,7 +79,8 @@
 						</div>
 						<div class="project col s12 m6">
 							<h3>
-								<a href="https://panoply.lsce.ipsl.fr/">Panoply - LSCE</a>
+								Panoply - LSCE
+								<aside class="subtitle">(<a href="https://panoply.lsce.ipsl.fr/">voir</a>)</aside>
 							</h3>
 							<p>
 								Traduction anglaise intégrale d'un site scientifique sous Drupal présentant une cinquantaine d'instruments, les techniques d'analyse et domaines d'application
@@ -146,11 +148,9 @@
 						</ul>
 					</div> <!--  End of studies-databox  -->
 					<div id="other-projects-databox">
-						<h2>Projets scolaires</h2>
+						<h2>Autres Projets</h2>
 						<div class="project">
-							<h3>
-								Projet final de la Wild Code School
-							</h3>
+							<h3>Projet final de la Wild Code School</h3>
 							<p>
 								Projet de démonstration technique (sans client, l'aspect esthétique du site n'a pas été abordé).
 								Ce site permet la création de joueurs et d'équipes de Quidditch, manuellement ou en création automatique via l'API randomuser et la constitution de matchs et de tournois.
@@ -158,12 +158,13 @@
 							</p>
 						</div>
 						<div class="project">
-							<h3>
-								Files Sharing
-							</h3>
+							<h3>Files Sharing</h3>
 							<p>
 								Projet de découverte de Ruby-on-rails. Ce projet permet l'hébergement de fichiers en ligne et d'en autoriser le téléchargement et la modification à des utilisateurs tiers (via des partages nominatifs ou des groupes de partages entièrement administrables par les utilisateurs).
 							</p>
+						</div>
+						<div class="project see-more">
+							<a href="projects">Voir mes projets en ligne</a>
 						</div>
 					</div>  <!--  End of other-projects-databox  -->
 				</div>
@@ -191,12 +192,12 @@
 							<a href="https://projecteuler.net/progress=Alshock">Project Euler</a>)
 						</li>
 						<li class="expertise">
-							<strong>Outils de développement</strong> - <strong>SCRUM</strong> (développement agile), <strong>Git</strong>, <strong>Github</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>SASS</strong>...
+							<strong>Outils de développement</strong> - <strong>SCRUM</strong> (développement agile), <strong>Git</strong>, <strong><a href="https://github.com/cyril-lemaire">Github</a></strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, <strong><a href="https://sass-lang.com/">SASS</a></strong>...
 						</li>
 					</ul>
 					<!-- <a href="projects.html">
-						<h2>Projets personnels</h2>
-					</a> Coming soon -->
+<h2>Projets personnels</h2>
+</a> Coming soon -->
 				</div>
 			</div>  <!--  End of right-box  -->
 

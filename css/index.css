@@ -3,7 +3,7 @@ body {
   background-color: white;
   margin: 0; }
   body div {
-    margin: 0.5rem;
+    margin: 0.5em;
     /* border: blueviolet 1px dashed; */
     display: inherit;
     flex-direction: inherit; }
@@ -11,33 +11,35 @@ body {
     width: 100% !important;
     padding: 0 !important;
     margin: 0 !important; }
-  body #profil_image {
-    font-size: 1rem;
+  body #profile-picture {
+    font-size: 1em;
+    margin-top: 0.5em;
     width: 50%;
     flex-direction: column;
     align-self: center;
     align-items: center; }
   body .rotate90 {
-    margin: 2.5rem 0;
+    margin: 2.5em 0;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg); }
-  body h1, body h2 {
+  body h1, body h2, body h3, body h4 {
     text-align: center; }
+  body .subtitle {
+    display: inline;
+    font-size: 0.7em; }
   body #header, body #footer {
     min-width: 30rem; }
   body #header, body div[id$="databox"], body #footer {
-    margin: 0.425rem 0.75rem;
+    margin: 0.425em 0.75em;
     width: auto; }
-  body #footer p {
-    text-align: center; }
   body #body-container {
     display: flex; }
   body div[id$='databox'] {
-    text-align: center;
-    padding: 2rem; }
+    text-align: justify;
+    padding: 2em; }
   body #studies-databox {
     text-align: left; }
     body #studies-databox li {
@@ -47,58 +49,73 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center; }
-  body #left-box {
+  body #expertises-databox {
+    display: flex;
     flex-direction: column;
-    float: left;
+    align-items: center;
+    align-content: center; }
+    body #expertises-databox ul {
+      display: inline-block; }
+  body #left-box {
+    min-width: 15rem;
+    flex-direction: column;
     background-color: #0d2b40;
     color: white;
-    padding: 1rem;
-    margin: 0;
-    max-width: 18rem; }
+    padding: 1em;
+    margin: 0; }
     body #left-box #infos .social_img {
-      width: 2rem; }
+      width: 2em; }
     body #left-box h3, body #left-box #left-box ul {
-      margin: 0.5rem 0; }
+      margin: 0.5em 0; }
     body #left-box div {
       background-color: #123c5a;
       flex-direction: column;
-      margin: 0.5rem 0;
-      padding: 0.5rem;
-      border-radius: 1rem; }
+      margin: 0.5em 0;
+      padding: 0.5em;
+      border-radius: 1em; }
     body #left-box a {
       color: lightcyan; }
+    body #left-box a:hover {
+      background-color: rgba(33, 111, 166, 0.25); }
   body #right-box {
+    min-width: 75rem;
     flex-direction: column;
     margin: 0;
-    overflow: scroll;
-    height: 100%;
     background-color: rgba(46, 153, 230, 0.2); }
     body #right-box #header, body #right-box #footer, body #right-box div[id$='databox'] {
       background-color: white;
-      border-radius: 2.5rem; }
+      border-radius: 2.5em; }
     body #right-box a {
-      color: #000020; }
+      color: #34034c; }
+    body #right-box a:hover {
+      color: #590250;
+      text-decoration-style: wavy;
+      text-decoration-skip: ink;
+      text-decoration: underline; }
     body #right-box #studies {
       flex-direction: row; }
       body #right-box #studies div[id$='databox'] {
         flex-direction: column;
         width: 50%; }
-    body #right-box #studies-databox li, body #right-box .project {
+    body #right-box #studies-databox li, body #right-box .project, body #right-box #expertises-databox ul {
       border-radius: inherit;
-      background-color: #f1f1f1;
-      border-radius: 1rem;
-      padding: 0.5rem; }
+      background-color: rgba(49, 162, 243, 0.05);
+      border-radius: 1em;
+      padding: 0.5em; }
     body #right-box .row {
       flex-direction: row; }
     body #right-box .project {
-      font-size: 1.15rem;
+      font-size: 1.15em;
       flex-direction: column; }
   body a {
     text-decoration: none; }
-  body a:hover {
-    text-decoration-style: wavy;
-    text-decoration-color: blueviolet;
-    text-decoration-skip: ink;
-    text-decoration: underline; }
+
+.see-more {
+  text-align: center;
+  font-size: 1.5em; }
+
+ul.square-list li {
+  list-style-type: square;
+  margin-left: 1em; }
 
 /*# sourceMappingURL=index.css.map */
